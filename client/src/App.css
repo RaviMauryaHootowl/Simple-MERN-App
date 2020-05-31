@@ -39,6 +39,8 @@
   align-items: center;
 }
 
+
+
 .postDetails{
   display: flex;
   flex-direction: column;
@@ -76,6 +78,8 @@
 .postContent{
   text-align: justify;
 }
+
+
 
 .addPostDialogOpenBtn{
   font-size: 20px;
@@ -129,6 +133,32 @@
   border-radius: 5px;
 }
 
+.cancelDialogContainer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px){
+  .appHeader{
+    font-size: 22px;
+  }
+  .postContainer{
+    width: 95%;
+    margin: 8px;
+  }
+  .postTitle{
+    font-size: 22px;
+  }
+  .addNewPostContainer{
+    width: 95%;
+  }
+  .addNewPostContainer input{
+    width: 100%;
+  }
+}
 
 
 /* Loading Spinner */

@@ -114,6 +114,7 @@ function App() {
       </div>
       <div className="addPopupContainer">
         <div className="addNewPostContainer">
+          <div className="cancelDialogContainer"><MdClear color="black" size="25" onClick={() => {document.querySelector('.addPopupContainer').style.display = "none";}}/></div>
           <input value={newPostTitle} type="text" name="" id="" onChange={(e) => { setNewPostTitle(e.target.value) }} placeholder="Note Title" />
           <input value={newPostContent} type="text" name="" id="" onChange={(e) => { setNewPostContent(e.target.value) }} placeholder="Note Content" />
           {(isLoading) ? <div className="smallLoadingContainer"><div className="lds-ring small-loading"><div></div><div></div><div></div><div></div></div></div> : <button onClick={addNoteBtnClick}>Save</button>}

@@ -23,6 +23,7 @@ mongoose.connect(process.env.DB_CONNECTION, { useUnifiedTopology: true, useNewUr
     console.log('DB CONNECTED!!'.cyan);
 });
 
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, ()=>{
     console.log(`Server Started at PORT ${PORT}`.blue.bold);

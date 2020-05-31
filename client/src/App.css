@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.App{
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,14 +12,14 @@
   width: 100%;
 }
 
-.appHeader{
+.appHeader {
   margin: 10px;
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-.postsContainer{
+.postsContainer {
   flex: 2;
   width: 100%;
   display: flex;
@@ -28,7 +28,7 @@
   overflow-y: scroll;
 }
 
-.postContainer{
+.postContainer {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -39,15 +39,13 @@
   align-items: center;
 }
 
-
-
-.postDetails{
+.postDetails {
   display: flex;
   flex-direction: column;
   flex: 2;
 }
 
-.deletePostBtn{
+.deletePostBtn {
   border: none;
   outline: none;
   width: 20px;
@@ -61,27 +59,25 @@
   margin-left: 10px;
 }
 
-.postTitle{
+.postTitle {
   font-size: 30px;
   font-weight: 600;
   color: royalblue;
   cursor: pointer;
 }
 
-.postDate{
+.postDate {
   font-style: italic;
   color: rgb(117, 117, 117);
   margin-bottom: 10px;
   font-size: 14px;
 }
 
-.postContent{
+.postContent {
   text-align: justify;
 }
 
-
-
-.addPostDialogOpenBtn{
+.addPostDialogOpenBtn {
   font-size: 20px;
   border-radius: 100vh;
   padding: 10px 20px;
@@ -92,7 +88,7 @@
   margin: 10px 0;
 }
 
-.addPopupContainer{
+.addPopupContainer {
   display: none;
   position: fixed;
   z-index: 1;
@@ -103,7 +99,7 @@
   align-items: center;
 }
 
-.addNewPostContainer{
+.addNewPostContainer {
   background-color: white;
   padding: 20px;
   display: flex;
@@ -112,7 +108,7 @@
   border-radius: 10px;
 }
 
-.addNewPostContainer input{
+.addNewPostContainer input {
   width: 300px;
   margin-bottom: 20px;
   border: none;
@@ -123,7 +119,7 @@
   font-size: 18px;
 }
 
-.addNewPostContainer button{
+.addNewPostContainer button {
   border: none;
   outline: none;
   background-color: royalblue;
@@ -133,37 +129,35 @@
   border-radius: 5px;
 }
 
-.cancelDialogContainer{
+.cancelDialogContainer {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 10px;
 }
 
-
-@media only screen and (max-width: 600px){
-  .appHeader{
+@media only screen and (max-width: 600px) {
+  .appHeader {
     font-size: 22px;
   }
-  .postContainer{
+  .postContainer {
     width: 95%;
     margin: 8px;
   }
-  .postTitle{
+  .postTitle {
     font-size: 22px;
   }
-  .addNewPostContainer{
+  .addNewPostContainer {
     width: 95%;
   }
-  .addNewPostContainer input{
+  .addNewPostContainer input {
     width: 100%;
   }
 }
 
-
 /* Loading Spinner */
 
-.loadingContainer{
+.loadingContainer {
   width: 100%;
   display: flex;
   height: 500px;
@@ -177,6 +171,7 @@
   width: 80px;
   height: 80px;
 }
+
 .lds-ring div {
   box-sizing: border-box;
   display: block;
@@ -190,17 +185,17 @@
   border-color: royalblue transparent transparent transparent;
 }
 
-.small-loading{
+.small-loading {
   width: 30px;
   height: 30px;
 }
 
-.smallLoadingContainer{
+.smallLoadingContainer {
   display: flex;
   justify-content: center;
 }
 
-.small-loading div{
+.small-loading div {
   width: 30px;
   height: 30px;
   border: 3px solid royalblue;
@@ -210,12 +205,15 @@
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
 }
+
 .lds-ring div:nth-child(2) {
   animation-delay: -0.3s;
 }
+
 .lds-ring div:nth-child(3) {
   animation-delay: -0.15s;
 }
+
 @keyframes lds-ring {
   0% {
     transform: rotate(0deg);

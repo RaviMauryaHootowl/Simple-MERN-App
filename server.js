@@ -19,7 +19,7 @@ if(process.env.NODE_ENV === 'production'){
     })
 }
 
-mongoose.connect('mongodb+srv://ravimaurya027:ravimaurya027@postcluster-uurfm.mongodb.net/test?retryWrites=true&w=majority', { useUnifiedTopology: true, useNewUrlParser: true }, () => {
+mongoose.connect(process.env.DB_CONNECTION, { useUnifiedTopology: true, useNewUrlParser: true }, () => {
     console.log('DB CONNECTED!!'.cyan);
 });
 
